@@ -19,6 +19,7 @@ orderBy,
 query,
 } from "firebase/firestore";
 
+
 function UsersComponent(props) {
 const handleToggle = (username, userId) => {
 	props.setReceiverData({
@@ -175,7 +176,8 @@ return (
 		</Button>
 		</div>
 		<Divider />
-		All users
+		You are chatting with:
+{/* this is where the user component is created  */}
 		<div style={{ overflowY: "scroll",backgroundColor:"#C9FBFF" }}>
 		<UsersComponent
 			users={users}
@@ -184,9 +186,21 @@ return (
 			currentUserId={user?.uid}
 		/>
 		</div>
+		<div>
+		<Button
+			color="secondary"
+			onClick={() => {
+			
+			navigate("/feedback");
+			}}
+		>
+			Im done
+		</Button>
+		</div>
 	</Paper>
 
 	<Paper style={right}>
+		{/* username above the chat */}
 		<h4 style={{ margin: 2, padding: 10,backgroundColor:"#C9FBFF"}}>
 		{receiverData ? receiverData.username : user?.displayName}{" "}
 		</h4>
