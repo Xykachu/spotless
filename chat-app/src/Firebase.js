@@ -11,7 +11,9 @@ const firebaseConfig = {
   measurementId: "G-C1E2YSSC9E"
 };
 
-
+// TODO - Add field for therapists and their specialitys
+// TODO - Add how much money was donated and split between x therapists
+// TODO - Add a category Table for the therapist so that they can choose what they specialise in
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);

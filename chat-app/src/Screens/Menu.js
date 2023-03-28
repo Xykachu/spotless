@@ -18,6 +18,10 @@ function HomePage() {
 
   return (
     <div>
+      {/* TODO - Urgent should match with any available therapists*/}
+      {/* TODO - Add code for matching users based on their previous expierences on the app e.g. allowing therapist keep a file*/}
+    
+
       <h1>Home Page</h1>
       <button onClick={handleCalmClick}>Calm</button>
       <button onClick={handleUrgentClick}>Urgent</button>

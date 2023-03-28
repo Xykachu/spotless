@@ -21,6 +21,12 @@ function PaymentPage() {
   return (
     <div>
       <h1>Payment Page</h1>
+      {/* TODO - Add Payment Methods*/}
+      {/* TODO - Add ways to track payments*/}
+      {/* TODO - Add a donate button*/}
+      {/* TODO - Add a back home button*/}
+
+
       <label>
         Payment Amount:
         <input type="number" value={paymentAmount} onChange={handlePaymentAmountChange} />

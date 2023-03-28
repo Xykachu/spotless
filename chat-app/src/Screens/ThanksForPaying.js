@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
 function ThanksForPaying() {
+  //TODO - Display the amount Donated(if any) and to tell what it goes towards
     // this page will be used to set a matching system
     //for now there is a timeout to demonstrate the waiting page
     const navigate = useNavigate();

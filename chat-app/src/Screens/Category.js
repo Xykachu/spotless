@@ -19,6 +19,11 @@ function CategoryPage() {
   return (
     <div>
       <h1>Category</h1>
+      {/* TODO - Make each category match the specialised therapists*/}
+      {/* TODO - Change the Routes to correct category routes*/}
+
+
+
       <button onClick={handleAnxietyClick}>Anxiety</button>
       <button onClick={handleLossClick}>Loss</button>
       <button onClick={handleFeelingDownClick}>Feeling Down</button>

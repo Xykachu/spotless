@@ -14,6 +14,8 @@ function PaymentOptionsPage() {
 
   return (
     <div>
+      {/* TODO - Add Functionailitys to each of the payment methods*/}
+
       <h1>Payment Options Page</h1>
       <button onClick={handlePaymentTransactionClick}>
         paypal

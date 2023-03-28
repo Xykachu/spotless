@@ -18,6 +18,12 @@ function FeedbackPage() {
 
   return (
     <div>
+      {/* TODO - Track the feedback*/}
+      {/* TODO - In the future improve the suggestions e.g. comment box*/}
+      {/* TODO - If Negative why?*/}
+
+
+
       <h1>Was this page helpful?</h1>
       <button onClick={handleYesClick}>
         <span role="img" aria-label="green tick">
