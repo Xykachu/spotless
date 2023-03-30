@@ -10,6 +10,8 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router";
 
+import "../App.css";
+import { styled } from '@mui/material/styles';
 import { db, auth } from "../Firebase";
 import {
 addDoc,
@@ -19,7 +21,17 @@ orderBy,
 query,
 } from "firebase/firestore";
 
-
+const StyledButton = styled(Button)({
+	//backgroundColor: '#F19C99',
+	backgroundColor:'#fccac2',
+	color: "black",
+	width: '80%',
+	height: '100%',
+	'&:hover':{
+		backgroundColor:'#F19C99',
+	}
+  });
+  
 function UsersComponent(props) {
 const handleToggle = (username, userId) => {
 	props.setReceiverData({
@@ -187,7 +199,7 @@ return (
 		/>
 		</div>
 		<div>
-		<Button
+		<StyledButton
 			color="secondary"
 			onClick={() => {
 			
@@ -195,7 +207,7 @@ return (
 			}}
 		>
 			Im done
-		</Button>
+		</StyledButton>
 		</div>
 	</Paper>
 

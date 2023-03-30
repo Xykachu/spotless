@@ -15,20 +15,27 @@ function PaymentOptionsPage() {
   return (
     <div>
       {/* TODO - Add Functionailitys to each of the payment methods*/}
-
-      <h1>Payment Options Page</h1>
-      <button onClick={handlePaymentTransactionClick}>
-        paypal
-        
+      <div className="SpotlessBanner">
+  <h1>Spotless</h1>
+</div>
+      <h1 class="H1">Payment Options Page</h1>
+      <div>
+      <button class="PaypalButton" onClick={handlePaymentTransactionClick}>
+         <span class="paypal-logo">
+      <i>Pay</i><i>Pal</i>
+    </span>
       </button>
-      <button onClick={handlePaymentTransactionClick}> 
-        stripe
+      </div>
+      <div>
+      <button class="StripeButton" onClick={handlePaymentTransactionClick}> 
+        Stripe
       </button>
-      <button onClick={handlePaymentTransactionClick}>
-        google pay
+      </div>
+      <button class="GoogleButton" onClick={handlePaymentTransactionClick}>
+        Google Pay
       </button>
       <br />
-      <button onClick={handleBackClick}>Back to Chat App</button>
+      <button class="NormalButton"onClick={handleBackClick}>Back to Chat App</button>
     </div>
   );
 }

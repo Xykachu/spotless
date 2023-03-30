@@ -1,0 +1,166 @@
+body
+{
+    background-color: #F19C99;
+    
+}
+.NormalButton{
+	background-color: #fccac2;
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+	}
+.NormalButton:hover{
+  background-color:#F19C99;
+
+}
+/* Below is Css For Feedback Page */
+.feedbackSquare
+{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+        width: 60%;
+        height: 55%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    background-color: #C9FBFF;
+}
+.Button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .TickButton:hover {
+    background-color: #3e8e41;
+  }
+.TickButton
+{
+    margin-top: 3%;
+    height:40%;
+    width: 40%;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5%;
+
+}
+.TickButton::before {
+    content: "✅";
+    margin-right: 5px;
+  }
+.CrossButton
+{
+    height:40%;
+    width: 40%;
+    display: inline-block;
+    background-color: #990F02;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.CrossButton::before {
+    content: "❌";
+    margin-right: 5px;
+  }
+.SpotlessBanner{
+        background-color: #bd574f;
+        color: white;
+        padding: 5px;
+        top: 0;
+        left: 0;
+        width: 100%;
+}
+
+/* PaymentPageCss */
+.PaymentAmount
+{
+    margin-top: 1em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+.TipAmount
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 2em;
+
+}
+input {
+    width: 20em;
+    height: 2em;
+}
+
+/* https://codepen.io/Kofaka/pen/OPbqNo where i got it */
+.PaypalButton
+{
+    padding: 15px 30px;
+    border: 1px solid #FF9933;
+    border-radius: 5px;
+    background-image: linear-gradient(#FFF0A8, #F9B421);
+    margin: 0 auto;
+    display: block;
+    min-width: 138px;
+    position: relative;
+    font-size: 14px;
+    color: #505050;
+    vertical-align: baseline;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+}
+.paypal-logo {
+    display: inline-block;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+  }
+.StripeButton
+{
+    background-color: #CF9FFF;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.GoogleButton
+{
+    background-color: black;
+    color:white;
+    display: inline-block;
+    padding: 15px 30px;
+
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.H1
+{
+color: #C9FBFF;
+}
