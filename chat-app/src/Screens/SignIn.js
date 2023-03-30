@@ -15,7 +15,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase";
-
+import spotless from'../spotless.png'
+import logo from'../spotless_logo.png'
+import './style.css'
 //TODO - Add Google Login
 const theme = createTheme();
 
@@ -31,7 +33,7 @@ const handleSubmit = async (event) => {
 		// Signed in
 		const user = userCredential.user;
 
-		navigate("/chat-home/1");
+		navigate("/menu");
 		// ...
 	})
 	.catch((error) => {
@@ -53,10 +55,7 @@ return (
 			flexDirection: "column",
 			alignItems: "center",
 		}}
-		>
-		<Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-			<LockOutlinedIcon />
-		</Avatar>
+		><img className='spotlessLogo' src={logo} alt="Logo"/>
 		<Typography component="h1" variant="h5">
 			Sign in
 		</Typography>
@@ -115,6 +114,9 @@ return (
 				</Link>
 			</Grid>
 			</Grid>
+			<Box sx={{ mt: 5 }}>
+              <img src={spotless} alt="spotless"className="spotlessdog" ></img>
+			</Box>
 		</Box>
 		</Box>
 	</Container>

@@ -289,7 +289,9 @@ color: #C9FBFF;
     height: 50px;
     padding: 20px;
 }
-
+.spotlessdog{
+    height: 300px;
+}
 .container{
     padding:100px;
     text-align: center;
