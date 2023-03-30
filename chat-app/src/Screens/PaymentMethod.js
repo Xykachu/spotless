@@ -1,5 +1,10 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import pp from'../paypal.png'
+import stripe from'../stripe.png'
+import google from'../googlepay.png'
+import { Link } from 'react-router-dom';
+import logo from'../spotless_logo.png'
 
 function PaymentOptionsPage() {
   const location = useLocation();
@@ -16,26 +21,40 @@ function PaymentOptionsPage() {
     <div>
       {/* TODO - Add Functionailitys to each of the payment methods*/}
       <div className="SpotlessBanner">
-  <h1>Spotless</h1>
-</div>
-      <h1 class="H1">Payment Options Page</h1>
+        <Link to="/menu">
+      <img className='spotlessLogo' src={logo} alt="Logo"/>
+      </Link>
+    </div>
+    <div className='paddingDiv2'>
+    
+    <div className='container'>
+      <h1 className="Pagetitle">Choose a payment option</h1>
       <div>
-      <button class="PaypalButton" onClick={handlePaymentTransactionClick}>
-         <span class="paypal-logo">
-      <i>Pay</i><i>Pal</i>
+      <button className="PaypalButton" onClick={handlePaymentTransactionClick}>
+         <span className="paypal-logo">
+         <img className='paypal' src={pp} alt="paypal"/>
     </span>
       </button>
       </div>
+      
       <div>
-      <button class="StripeButton" onClick={handlePaymentTransactionClick}> 
-        Stripe
+      <div className='stripeSpan'>
+      <button className="StripeButton" onClick={handlePaymentTransactionClick}> 
+      <img className='stripe' src={stripe} alt="stripe"/>
       </button>
       </div>
-      <button class="GoogleButton" onClick={handlePaymentTransactionClick}>
-        Google Pay
+      </div>
+      <div>
+      <button className="GoogleButton" onClick={handlePaymentTransactionClick}>
+      <span className="google-logo">
+      <img className='google' src={google} alt="google"/>
+      </span>
       </button>
+      </div>
       <br />
-      <button class="NormalButton"onClick={handleBackClick}>Back to Chat App</button>
+      <button className="btnBackToMenu"onClick={handleBackClick}>Back to Chat App</button>
+    </div>
+    </div>
     </div>
   );
 }

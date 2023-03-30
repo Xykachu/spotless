@@ -9,6 +9,8 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router";
+import logo from'../spotless_logo.png'
+import { Link } from 'react-router-dom';
 
 import "../App.css";
 import { styled } from '@mui/material/styles';
@@ -23,9 +25,10 @@ query,
 
 const StyledButton = styled(Button)({
 	//backgroundColor: '#F19C99',
-	backgroundColor:'#fccac2',
+	backgroundColor:'rgb(92, 231, 234)',
 	color: "black",
-	width: '80%',
+	width: '50%',
+	marginRight: '15px',
 	height: '100%',
 	'&:hover':{
 		backgroundColor:'#F19C99',
@@ -43,6 +46,7 @@ const handleToggle = (username, userId) => {
 };
 
 return (
+	
 	<List
 	dense
 	sx={{ width: "100%", maxWidth: 360,
@@ -54,6 +58,7 @@ return (
 
 		if (props.currentUserId !== value.userId)
 		return (
+			
 			<ListItem key={value.userId} disablePadding>
 			<ListItemButton
 				onClick={() => {
@@ -166,8 +171,14 @@ const sendMessage = async () => {
 };
 
 return (
+
 	<div style={root}>
 	<Paper style={left}>
+	<div className="SpotlessBannerz">
+    <Link to="/menu">
+  <img className='spotlessLogoz' src={logo} alt="Logo"/>
+  </Link>
+</div>
 		<div
 		style={{
 			display: "flex",
@@ -314,7 +325,7 @@ border: "none",
 };
 
 const messagesDiv = {
-backgroundColor: "#EAC9C9",
+backgroundColor: "rgb(258, 169, 170)",
 //C9FBFF BF5E66
 padding: 5,
 display: "flex",

@@ -3,7 +3,7 @@ body
     background-color: #F19C99;
     
 }
-.NormalButton{
+.payButton{
 	background-color: #fccac2;
     display: inline-block;
     padding: 10px 24px;
@@ -11,9 +11,11 @@ body
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    height: 75px;
+    width: 150px;
     margin-top: 1em;
 	}
-.NormalButton:hover{
+.payButton:hover{
   background-color:#F19C99;
 
 }
@@ -33,7 +35,7 @@ body
 }
 .Button {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #a1f7a3;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
@@ -42,8 +44,8 @@ body
     cursor: pointer;
   }
   
-  .TickButton:hover {
-    background-color: #3e8e41;
+.TickButton:hover {
+    background-color: #97f59a;
   }
 .TickButton
 {
@@ -51,7 +53,7 @@ body
     height:40%;
     width: 40%;
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #5dd961;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
@@ -61,16 +63,12 @@ body
     margin-right: 5%;
 
 }
-.TickButton::before {
-    content: "✅";
-    margin-right: 5px;
-  }
 .CrossButton
 {
     height:40%;
     width: 40%;
     display: inline-block;
-    background-color: #990F02;
+    background-color: #e88077;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
@@ -79,10 +77,20 @@ body
     cursor: pointer;
     margin-left: 5%;
 }
-.CrossButton::before {
-    content: "❌";
-    margin-right: 5px;
-  }
+.CrossButton:hover
+{
+    height:40%;
+    width: 40%;
+    display: inline-block;
+    background-color: #fbaca5;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5%;
+}
 .SpotlessBanner{
         background-color: #bd574f;
         color: white;
@@ -90,6 +98,15 @@ body
         top: 0;
         left: 0;
         width: 100%;
+        
+}
+.SpotlessBannerz{
+    background-color:#F19C99;
+    color: white;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* PaymentPageCss */
@@ -116,7 +133,7 @@ input {
 /* https://codepen.io/Kofaka/pen/OPbqNo where i got it */
 .PaypalButton
 {
-    padding: 15px 30px;
+    padding: 20px 68px;
     border: 1px solid #FF9933;
     border-radius: 5px;
     background-image: linear-gradient(#FFF0A8, #F9B421);
@@ -124,43 +141,217 @@ input {
     display: block;
     min-width: 138px;
     position: relative;
-    font-size: 14px;
     color: #505050;
-    vertical-align: baseline;
+    cursor: pointer;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
 }
+.PaypalButton:hover{
+    background-image: linear-gradient(#F9B421, #FFF0A8);
+}
 .paypal-logo {
-    display: inline-block;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
-    font-size: 20px;
+    
   }
 .StripeButton
 {
-    background-color: #CF9FFF;
+    background-color: #e0c7f9;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 63px;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    margin: 0 auto;
+    min-width: 138px;
+    border-radius: 5px;
+    position: relative;
     cursor: pointer;
-    margin-top: 1em;
-    margin-right: 1em;
+
 }
+.StripeButton:hover{
+    background-color: #ece1f6;
+}
+.stripeSpan{
+    padding:10px;
+}
+
 .GoogleButton
 {
-    background-color: black;
-    color:white;
-    display: inline-block;
-    padding: 15px 30px;
-
-    font-size: 16px;
+    padding: 20px 63px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-image: rgb(238, 235, 235);
+    margin: 0 auto;
+    display: block;
+    min-width: 138px;
+    position: relative;
     cursor: pointer;
-    margin-top: 1em;
-    margin-right: 1em;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+   
+}
+.GoogleButton:hover
+{
+    background-color: #ffffff;
+   
+}
+.google{
+    height: 40px;
+    width: 100px;
+}
+.btnBackToMenu{
+    padding:20px;
+    background-color: rgb(140, 240, 240);
+    border:none;
+    border-radius:2px;
+    font-weight: bold;
+    
+}
+.btnBackToMenu:hover{
+    padding:20px;
+    background-color: rgb(212, 254, 255);
+    border:none;
+    cursor:pointer;
+    border-radius:2px;
 }
 .H1
 {
 color: #C9FBFF;
+}
+.btnCalm{
+    background-color: rgb(92, 231, 234);
+    color:rgb(30, 30, 30);
+    min-height:100px;
+    min-width: 200px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.btnCalm:hover{
+    background-color: rgb(161, 251, 231);
+    color:rgb(23, 23, 23);
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.Pagetitle{
+    color: rgb(29, 29, 55);
+    font-size: 30px;
+    padding-top: 30px;
+    
+}
+.btnUrgent:hover{
+    background-color: rgb(245, 77, 77);
+    color:rgb(23, 23, 23);
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+    
+}
+.jamie{
+    color: rgb(245, 116, 116);
+}
+.btnUrgent{
+    background-color: rgb(245, 116, 116);
+    min-height:100px;
+    min-width: 200px;
+    color:rgb(23, 23, 23);
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.spotlessLogo{
+    height: 40px;
+    padding: 20px;
+}
+.spotlessLogoz{
+    height: 50px;
+    padding: 20px;
+}
+
+.container{
+    padding:100px;
+    text-align: center;
+    justify-content: center;
+    background-color: #d1ece8;
+    width: 50%; /* Or any other desired width */
+    margin: 0 auto;
+}
+.paddingDiv{
+    padding: 150px;
+}
+.paddingDiv2{
+    padding: 70px;
+}
+.paypal{
+    height: 50px;
+    
+}
+.stripe{
+    height: 50px;
+    width: 100px;
+}
+.calm{
+color:rgb(64, 174, 210);
+}
+.urgent{
+color: rgb(245, 116, 116);
+}
+.aCoolParagraph{
+    color: rgb(20, 19, 19);
+    font-size: 25px;
+}
+.btnCat{
+    background-color: rgb(92, 231, 234);
+    min-height:100px;
+    min-width: 200px;
+    color:rgb(23, 23, 23);
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.btnCat:hover{
+    background-color: rgb(160, 228, 214);
+    color:rgb(23, 23, 23);
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.paymentLabels{
+    padding:20px;
+    color: #212221;
+    font-weight: bold;
 }

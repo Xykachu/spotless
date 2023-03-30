@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import './style.css'
+import logo from'../spotless_logo.png'
+import { Link } from 'react-router-dom';
+
 function FeedbackPage() {
     const navigate = useNavigate();
   const [feedback, setFeedback] = useState(null);
@@ -23,20 +26,18 @@ function FeedbackPage() {
       {/* TODO - In the future improve the suggestions e.g. comment box*/}
       {/* TODO - If Negative why?*/}
       <div className="SpotlessBanner">
-  <h1>Spotless</h1>
-</div>
+        <Link to="/menu">
+      <img className='spotlessLogo' src={logo} alt="Logo"/>
+      </Link>
+    </div>
 
 <div className='feedbackSquare'>
-      <h1 >Was this page helpful?</h1>
+      <h1 className='Pagetitle'>Was this page helpful?</h1>
       <button onClick={handleYesClick} className='TickButton'>
-        {/* <span role="img" aria-label="green tick">
-          ✅
-        </span> */}
+        Yes
       </button>
       <button onClick={handleNoClick} className='CrossButton'>
-        {/* <span role="img" aria-label="black X">
-          ❌
-        </span> */}
+        No
       </button>
       </div>
       {feedback === 'yes' && <p>Thank you for your feedback!</p>}
