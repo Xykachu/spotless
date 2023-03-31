@@ -57,7 +57,7 @@ return (
 		}}
 		><img className='spotlessLogo' src={logo} alt="Logo"/>
 		<Typography component="h1" variant="h5">
-			Sign in
+			<b>Sign in</b>
 		</Typography>
 		<Box
 			component="form"
@@ -109,8 +109,9 @@ return (
 				</Link>
 			</Grid>
 			<Grid item>
+				<span>Don't have an account? </span>
 				<Link href="/Signup" variant="body2">
-				{"Don't have an account? Sign Up"}
+				{"Sign Up"}
 				</Link>
 			</Grid>
 			</Grid>
